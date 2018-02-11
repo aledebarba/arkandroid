@@ -30,3 +30,4 @@ C:\Users\Alexandre\Google Drive\gamedev\arkandroid\arkandroid\Temp\bin\Debug\Uni
 C:\Users\Alexandre\Google Drive\gamedev\arkandroid\arkandroid\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\Alexandre\Google Drive\gamedev\arkandroid\arkandroid\obj\Debug\Assembly-CSharp.dll
 C:\Users\Alexandre\Google Drive\gamedev\arkandroid\arkandroid\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Alexandre\Google Drive\gamedev\arkandroid\arkandroid\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
