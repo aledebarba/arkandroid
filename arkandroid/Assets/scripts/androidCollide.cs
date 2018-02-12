@@ -17,8 +17,10 @@ public class androidCollide : MonoBehaviour {
 		androids--;
 		// quando o contador zerar, carrega endgame
 		if (androids <= 0) {
+			// garante que o contador e as intruções do canvas vão aparecer se o jogo reiniar
+			missionControl.okToGo = false;
+			// carrega fim de jogo
 			SceneManager.LoadScene ("endgame");
-
 		}
 	}
 }

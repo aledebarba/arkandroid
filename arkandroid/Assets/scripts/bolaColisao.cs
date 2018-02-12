@@ -3,25 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class bolaColisao : MonoBehaviour {
 
+public class bolaColisao : MonoBehaviour {
 
 	public float rotacao =360.0f;
 	public float velX, velY;
 	public AudioClip somBottom;
 
+
 	SpriteRenderer rnd;
 	AudioSource audioSrc;
 
+
 	void Start() {
+		//components
+
 		audioSrc = GetComponent<AudioSource> ();
 		rnd = GetComponent<SpriteRenderer> ();
 	}
 
 	void Update () {
-
-		transform.Translate (velX * Time.deltaTime,  velY * Time.deltaTime, 0.0f);
-
+		// só libera a bola quando missionControl apontar que pode
+		if (missionControl.okToGo) {
+			transform.Translate (velX * Time.deltaTime, velY * Time.deltaTime, 0.0f);
+		}
 			
 	}
 
@@ -48,7 +53,7 @@ public class bolaColisao : MonoBehaviour {
 		if (c.gameObject.tag == "bottom") {
 			audioSrc.PlayOneShot (somBottom, 1);
 			SceneManager.LoadScene ("Start");
-			
+			missionControl.okToGo = false;
 		}
 	}
 }

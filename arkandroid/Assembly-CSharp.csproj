@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\scripts\androidCollide.cs" />
      <Compile Include="Assets\scripts\bolaColisao.cs" />
+     <Compile Include="Assets\scripts\missionControl.cs" />
      <Compile Include="Assets\scripts\movePlayer.cs" />
      <Compile Include="Assets\scripts\waitforenter.cs" />
      <Compile Include="Assets\scripts\waitforenter2.cs" />
